@@ -1,0 +1,41 @@
+@media screen and (min-width:450px) {
+  .hero__content--community {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero__content--community div {
+    width: 70%;
+  }
+
+  .feature__content--details p:first-child {
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .hero__content--title {
+    font-size: 2.4rem;
+  }
+
+  .hero__content--description {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .hero {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .hero__content,
+  .hero__img {
+    width: 50%;
+  }
+
+  .hero__img {
+    order: 1;
+  }
+}
