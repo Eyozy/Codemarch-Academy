@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: 1px solid #000; */
 }
 
 body {
@@ -11,53 +10,103 @@ body {
   color: #094067;
 }
 
+/* Header area style */
 header {
   padding: 20px;
   display: flex;
   align-items: center;
+  width: 100%;
   height: 80px;
+  position: relative;
 }
 
+/* Header Logo and Title style */
 header figure {
   display: flex;
   align-items: center;
   gap: 10px;
+  z-index: 9999;
 }
 
 header figure figcaption {
-  /* font-size: 1.6em; */
   font-weight: bold;
 }
 
-header nav {
+/* Navigation Bar style */
+.nav--button {
   margin-left: auto;
+  z-index: 9999;
 }
 
+.nav--button #toggle--button,
+.nav--button #close--button {
+  text-decoration: none;
+}
 
-header nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.nav--button #close--button {
   display: none;
 }
 
-header nav ul li {
+/* Navigation icon size and color */
+#menu--icon,
+#close--icon {
+  font-size: 24px;
+  color: #5f6c7b;
+}
+
+/* Navbar default style */
+#navbar--open {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  background-color: #fffffe;
+  color: #5f6c7b;
+  width: 100%;
+}
+
+#navbar--open:target {
+  display: block;
+}
+
+#navbar--close:target {
+  display: none;
+}
+
+/* Toggle button display on navbar open */
+#navbar--open:target~.nav--button #toggle--button {
+  display: none;
+}
+
+#navbar--open:target~.nav--button #close--button {
   display: inline-block;
 }
 
-header nav ul li:not(:last-child) {
-  margin-right: 20px;
+/* Navbar links style */
+header nav ul {
+  list-style-type: none;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 header nav ul li a {
   text-decoration: none;
   transition: all .4s;
+  color: #5f6c7b;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 header nav ul li a:hover {
   color: rgb(12, 144, 239);
 }
 
+/* Main area style */
 main {
   height: 100%;
 }
@@ -130,6 +179,7 @@ main {
   color: #5f6c7b;
 }
 
+/* Hero image style */
 .hero__img {
   order: -1;
 }
@@ -184,6 +234,7 @@ main {
   color: #094067;
 }
 
+/* Feature icon style */
 .icon {
   color: #3da9fc;
   font-size: 25px;
@@ -237,7 +288,7 @@ main {
   text-decoration: none;
   background-color: #3da9fc;
   color: #fffffe;
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 4px;
   font-size: 0.75rem;
 }
@@ -348,6 +399,7 @@ footer ul {
   padding: 20px;
 }
 
+/* Footer icon style */
 .icon-social {
   color: #3da9fc;
 }

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./style/queries.css">
   <script src="https://kit.fontawesome.com/a7b17b09fe.js" crossorigin="anonymous"></script>
   <title>30 Days CodeCamp - Learn HTML, CSS, Tailwind & Git.</title>
+
 </head>
 
 <body>
@@ -18,15 +19,25 @@
       <figcaption>30 Days CodeCamp</figcaption>
     </figure>
     <!-- Navigation Bar -->
-    <nav>
+    <nav id="navbar--open" id="navbar--close">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/">Feature</a></li>
         <li><a href="/">Showcase</a></li>
-        <li><a href="">Projects</a></li>
+        <li><a href="/">Projects</a></li>
         <li><a href="https://twitter.com/codemarch" target="_blank">Follow</a></li>
       </ul>
     </nav>
+
+    <div class="nav--button">
+      <a href="#navbar--open" id="toggle--button">
+        <i class="fas fa-bars" id="menu--icon"></i>
+      </a>
+      <a href="#navbar--close" id="close--button">
+        <i class="fas fa-times" id="close--icon"></i>
+      </a>
+    </div>
+
   </header>
 
   <main>
