@@ -1,4 +1,4 @@
-@media screen and (min-width:450px) {
+@media screen and (min-width:481px) {
   .hero__content--community {
     display: flex;
     flex-direction: row;
@@ -12,9 +12,34 @@
   .feature__content--details p:first-child {
     gap: 15px;
   }
+
+  .pop__content {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width:768px) {
+  header {
+    display: flex;
+    width: 100%;
+  }
+
+  #navbar--open {
+    display: block;
+    padding: 0;
+    position: static;
+    width: auto;
+    margin-left: auto;
+  }
+
+  header nav ul {
+    flex-direction: row;
+  }
+
+  .nav--button {
+    display: none;
+  }
+
   .hero__content--title {
     font-size: 2.4rem;
   }
@@ -22,9 +47,70 @@
   .hero__content--description {
     font-size: 1.5rem;
   }
+
+  .task__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+  }
+
+  .projects__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+  }
+
+  .projects__item {
+    margin: 0;
+  }
+
+  .pop__content {
+    width: 450px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: 20px;
+    align-items: center;
+  }
+
+  footer h3 {
+    justify-self: left;
+  }
+
+  footer ul {
+    justify-self: right;
+    display: flex;
+    gap: 20px;
+  }
+
+  footer p {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  footer p:last-child {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width:1024px) {
+
+  header,
+  .hero,
+  .feature,
+  .task,
+  .projects,
+  footer {
+    padding: 40px;
+  }
+
+  header figure figcaption {
+    font-size: 1.4rem;
+  }
+
   .hero {
     flex-direction: row;
     gap: 30px;
@@ -37,5 +123,76 @@
 
   .hero__img {
     order: 1;
+  }
+
+  .feature__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .task__gallery {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+  }
+
+  .projects__items {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+  }
+
+  .pop__content {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width:1180px) {
+  .task__gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h2 {
+    font-size: 1.675rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  .feature__content--details p span {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .hero__content--title {
+    font-size: 2.8rem;
+  }
+
+  .hero__content--description {
+    font-size: 1.8rem;
+  }
+
+  .hero__content--details {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .hero__content--title {
+    font-size: 3.6rem;
+    width: 80%;
+  }
+
+  .hero__content--description {
+    font-size: 2rem;
+  }
+
+  .task__gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .projects__items {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
   }
 }
