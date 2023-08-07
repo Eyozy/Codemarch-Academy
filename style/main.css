@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+:root{
+  --html-clr:#e65100;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif;
+}
+p,li,a,span,label,input,button,figcaption{
+  font-family: "Outfit", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
@@ -75,11 +93,11 @@ header figure figcaption {
 }
 
 /* Toggle button display on navbar open */
-#navbar--open:target~.nav--button #toggle--button {
+#navbar--open:target ~ .nav--button #toggle--button {
   display: none;
 }
 
-#navbar--open:target~.nav--button #close--button {
+#navbar--open:target ~ .nav--button #close--button {
   display: inline-block;
 }
 
@@ -96,7 +114,7 @@ header nav ul {
 
 header nav ul li a {
   text-decoration: none;
-  transition: all .4s;
+  transition: all 0.4s;
   color: #5f6c7b;
   font-size: 1rem;
   font-weight: 700;
@@ -263,7 +281,7 @@ main {
 .task__gallery--item {
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 .task__gallery--item img {
@@ -277,7 +295,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 
 .task__btn a {
   text-decoration: none;
@@ -309,7 +326,7 @@ main {
 .projects__item img {
   max-width: 100%;
   height: auto;
-  border-bottom: 1px solid rgb(95, 108, 123, .1);
+  border-bottom: 1px solid rgb(95, 108, 123, 0.1);
 }
 
 .projects__item--details {
@@ -342,6 +359,12 @@ main {
   padding: 5px 10px;
   border-radius: 4px;
 }
+#html-tag{
+  background-color: var(--html-clr);
+  color: #fffffe;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
 
 .pop__container {
   display: none;
@@ -367,7 +390,6 @@ main {
   margin-bottom: 20px;
   line-height: 1.8;
 }
-
 
 .close-btn {
   padding: 10px 20px;
@@ -404,7 +426,7 @@ footer ul {
 }
 
 .icon-social:hover {
-  color: #5f6c7b
+  color: #5f6c7b;
 }
 
 footer p {
