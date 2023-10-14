@@ -38,6 +38,10 @@ figure {
   z-index: 9999;
 }
 
+figure img {
+  border-radius: 8px;
+}
+
 figcaption {
   font-size: 20px;
   font-weight: bold;
