@@ -1,41 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
-:root{
-  --html-clr:#e65100;
+
+:root {
+  --html-clr: #e65100;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Outfit", sans-serif;
-}
-p,li,a,span,label,input,button,figcaption{
-  font-family: "Outfit", sans-serif;
-}
-html {
-  scroll-behavior: smooth;
-}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-height: 100vh;
   background-color: #fffffe;
   color: #094067;
+  font-family: "Outfit", sans-serif;
 }
 
 /* Header area style */
 header {
-  padding: 20px;
   display: flex;
   align-items: center;
   width: 100%;
   height: 80px;
-  position: relative;
+  padding: 20px;
+
 }
 
 /* Header Logo and Title style */
@@ -43,7 +36,6 @@ header figure {
   display: flex;
   align-items: center;
   gap: 10px;
-  z-index: 9999;
 }
 
 header figure figcaption {
@@ -93,11 +85,11 @@ header figure figcaption {
 }
 
 /* Toggle button display on navbar open */
-#navbar--open:target ~ .nav--button #toggle--button {
+#navbar--open:target~.nav--button #toggle--button {
   display: none;
 }
 
-#navbar--open:target ~ .nav--button #close--button {
+#navbar--open:target~.nav--button #close--button {
   display: inline-block;
 }
 
@@ -127,6 +119,7 @@ header nav ul li a:hover {
 /* Main area style */
 main {
   height: 100%;
+
 }
 
 /* Hero area style */
@@ -359,7 +352,8 @@ main {
   padding: 5px 10px;
   border-radius: 4px;
 }
-#html-tag{
+
+#html-tag {
   background-color: var(--html-clr);
   color: #fffffe;
   padding: 3px 6px;

@@ -98,15 +98,6 @@
 
 @media screen and (min-width:1024px) {
 
-  header,
-  .hero,
-  .feature,
-  .task,
-  .projects,
-  footer {
-    padding: 40px;
-  }
-
   header figure figcaption {
     font-size: 1.4rem;
   }
@@ -164,6 +155,7 @@
 }
 
 @media screen and (min-width:1280px) {
+
   .hero__content--title {
     font-size: 2.8rem;
   }
