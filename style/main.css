@@ -32,13 +32,13 @@ header {
 }
 
 /* Header Logo and Title style */
-header figure {
+figure {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-header figure figcaption {
+figcaption {
   font-weight: bold;
 }
 
@@ -94,7 +94,7 @@ header figure figcaption {
 }
 
 /* Navbar links style */
-header nav ul {
+nav ul {
   list-style-type: none;
   padding: 20px 0;
   display: flex;
@@ -104,7 +104,7 @@ header nav ul {
   gap: 20px;
 }
 
-header nav ul li a {
+nav ul li a {
   text-decoration: none;
   transition: all 0.4s;
   color: #5f6c7b;
@@ -112,7 +112,7 @@ header nav ul li a {
   font-weight: 700;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
   color: rgb(12, 144, 239);
 }
 
